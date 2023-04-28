@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laravel Chat</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
     <div class="jumbotron text-center mt-8">
@@ -19,7 +20,7 @@
                     <div class="card-body">
                         <div class="mb-3" id="messageOutput"></div>
                         <hr>
-                        <form action="">
+                        <form id="chatForm">
                             <div class="form-group mb-3">
                                 <input type="text" class="form-control" id="message" placeholder="Message">
                             </div>
